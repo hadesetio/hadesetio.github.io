@@ -1,0 +1,72 @@
+        /* CSS untuk mengatur latar belakang video */
+        @font-face {
+            font-family: 'BerkshireSwash';
+            src: url('/assets/font/BerkshireSwash-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ReemKufi';
+            src: url('/assets/font/ReemKufi-VariableFont_wght.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Raleway';
+            src: url('/assets/font/Raleway-VariableFont_wght.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .containered {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+.ucapanan{
+    font-family: 'BerkshireSwash', cursive;
+    color:#E9A92D;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}        
+.teksJos{
+    font-family: 'Raleway', cursive;
+    color:#FFFBF4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
+.text_arab{
+    font-family: 'ReemKufi', cursive;
+    color:#FFFBF4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.textBiasa{
+    font-family: 'Raleway', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}       
+#background-video {
+    position: fixed;
+    left: 37%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* Menempatkan video di belakang konten */
+    object-fit: cover; /* Video akan ditampilkan dengan mengisi area tanpa memutar atau memotong bagian video */
+    transform: translate(-37%, -50%);
+}
+
+.floating-text {
+    animation: floatText 7s infinite ease-in-out; /* animasi untuk melayang */
+}
+
+@keyframes floatText {
+    0%, 100% {
+        transform: translateY(0); /* mulai dan akhir posisi */
+    }
+    50% {
+        transform: translateY(-20px); /* titik tertinggi melayang */
+    }
+}
